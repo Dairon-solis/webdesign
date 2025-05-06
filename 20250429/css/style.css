@@ -1,0 +1,39 @@
+body{
+    border: red dashed 5px;
+    padding: 1rem;
+}
+
+header{
+    border: solid blue 1px;
+}
+
+nav{
+    border: 1px darkblue solid;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li{background: lightgoldenrodyellow;
+    display: inline; padding: 1rem;
+}
+nav a{
+    text-decoration: none;
+}
+
+
+main{
+    border: dotted 5px green;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+footer{
+    background: darkgrey;
+    color: white;
+    border: 1px orange solid;
+}
+p{ text-align: justify;}
