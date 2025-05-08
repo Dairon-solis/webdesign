@@ -1,0 +1,22 @@
+main{
+    background: blue;
+    padding: 1rem;
+}  
+section{
+    background: yellowgreen;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+article{
+    background: yellow;
+    width: 46%;
+  height: 100px;
+}
+section,article{
+    border: solid gray;
+    margin: 1rem;
+    border-radius: 1rem;
+
+}
+#a{width: 100%;}
