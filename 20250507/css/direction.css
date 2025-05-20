@@ -1,0 +1,30 @@
+*{box-sizing: border-box; margin: 0;padding: 0;}
+main{
+    background: yellowgreen;
+    padding: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+section,article{
+    margin: 1rem;
+    display: flex;
+    border-radius: 1rem;
+    border: solid 3px;
+}
+section{
+    background: purple;
+   width: 500px;
+   flex-wrap: wrap;
+}
+article{
+    background: yellowgreen;
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+
+}
+#row{flex-direction: row;}
+#rowrev{flex-direction: row-reverse;}
+#column{flex-direction: column;height: 450px;}
+#columrev{flex-direction: column-reverse;height: 500px;}
