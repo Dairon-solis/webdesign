@@ -1,0 +1,33 @@
+*{box-sizing: border-box;padding: 0; margin: 0;}
+main{
+   padding: 1rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 60px);
+    border: black solid 3px;
+    gap: 1rem;
+    padding: 6px;
+}
+article{
+    border: blue solid;
+    height: 30px;
+    width: 30px;
+    background: yellow;
+}
+#a1 article, #a2 article, #a3 article{height: unset;}
+#a1{justify-items: start;}
+#a2{justify-items: center;}
+#a3{justify-items: end;}
+#a4 article, #a5 article, #a6 article{width:unset;}
+#a4{align-items: start;}
+#a5{align-items:  end;}
+#a6{align-items:  center;}
+#a7 article, #a8 article{height: unset; width: unset;}
+#a7{justify-items: stretch;}
+#a8{align-items:  stretch;}
