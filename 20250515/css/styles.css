@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid; 
+    grid-template-columns: repeat(6,1fr);
+}
+nav{
+    grid-column: 1/-1;
+    background: rgba(251, 255, 0, 0.76);
+    border: black solid 2px;
+    border-radius: 10px;
+    
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr repeat(5,auto) 1fr;
+    list-style: none;
+    justify-self: center;
+    
+    
+}
+nav a{
+    padding: .5rem 1rem;
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: black solid 3px;
+    height: 60px;
+    border-radius: 1rem;
+}
+nav a:hover{
+    background: rgba(128, 128, 128, 0.521);
+    color: white;
+}
+
+header {
+  grid-column: 1 / -1; 
+  display: grid; 
+  justify-content: center;
+  align-items: center;
+  background: rgb(252, 252, 171);
+  height: 100px;
+  font-size: xx-large;
+}
+main {
+    display: grid;
+    grid-column: 1/5;
+    padding: 3rem;
+    border-radius: 3px;
+    background: rgba(0, 17, 255, 0.404);
+    border:black solid 2px;
+    border-radius: 1rem;
+
+}
+
+section {
+    display: grid;
+    background: rgb(0, 255, 221);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,100px) ;
+    border-radius: 1rem;
+    
+}
+article {
+    background: rgb(0, 255, 170);
+    border: 3px solid black;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px ;
+    padding: 1rem;
+    font-size: 3rem;
+}
+#art-a {
+    grid-column: 1/-1;}
+#art-b {
+    grid-column-start: -6;
+    grid-column-end: 6;
+    grid-row: 5;
+}
+#art-c{
+    grid-column: 5;
+    grid-row: -5/-2;
+}
+#art-d{
+    grid-area: -5/1/-2/3;
+    /* grid-column: 1/3; */
+    /* grid-row: 2/5; */
+}
+#art-e{
+    grid-area: -5/3/-3/5;
+    /* grid-column: 3/5; */
+    /* grid-row: 2/4; */
+}
+#art-f{
+    grid-column: 5/3;
+    grid-row: -3/-2;
+}
+aside{
+    border: black solid 2px;
+    grid-column: -3/-1;
+    border-radius: 10px;
+    justify-items: center;
+    padding: 1rem;
+    background: rgb(192, 255, 255)
+}
+footer{grid-column: 1/-1; height: 80px; padding: 2rem;background: rgba(2, 255, 86, 0.527);justify-items: center;border-radius: 10px;border: black solid 2px;}
